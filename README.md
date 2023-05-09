@@ -15,6 +15,8 @@ Once installed, run `sh scripts/port-forward.sh` to forward the daytrader applic
 Keep the `scripts/port-forward.sh` script running in a terminal and then the daytrader app will be available at your machine at http://localhost:5443/
 
 Try `curl https://localhost:5443/` before checking from the web browser
+If you run the commands from vscode terminal, also check if the PORT is being forwarded correctly
+![VSCode PORTS](ports.PNG "Ports in Dock section")
 
 ### Updating
 
