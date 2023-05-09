@@ -1,0 +1,4 @@
+image:
+  namespace: ssmtariq
+cluster:
+  dns: node-0.dt-test.cloudprof-pg0.utah.cloudlab.us

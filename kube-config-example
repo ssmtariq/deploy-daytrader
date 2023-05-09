@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+  - cluster:
+      insecure-skip-tls-verify: true
+      server: http://node-0.dt.cloudprof-pg0.utah.cloudlab.us:6443
+    name: cloudlab-server
+contexts:
+  - context:
+      cluster: cloudlab-server
+      namespace: default
+      user: cloudlab-server
+    name: cloudlab-server
+current-context: cloudlab-server
+kind: Config
+preferences: {}
+users:
+  - name: cloudlab-server
+    user:
+      token: "Admin token"

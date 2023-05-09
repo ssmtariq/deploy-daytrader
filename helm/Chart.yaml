@@ -1,0 +1,4 @@
+apiVersion: v1
+name: sample-daytrader-microservices
+version: 1.0.0
+appVersion: 4.0.18
