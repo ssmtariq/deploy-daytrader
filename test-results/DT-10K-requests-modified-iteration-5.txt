@@ -8,7 +8,6 @@
 2023-05-10 12:13:58.066  INFO 1 --- [nio-3443-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2023-05-10 12:13:58.067  INFO 1 --- [nio-3443-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2023-05-10 12:13:59.207  INFO 1 --- [nio-3443-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 1140 ms
-647256275 nanoseconds-
 107273235 nanoseconds-
 85390654 nanoseconds-
 77852442 nanoseconds-
