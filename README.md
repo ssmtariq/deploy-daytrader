@@ -6,7 +6,16 @@ This repo contains a Helm chart that can be used to deploy [Daytrader Microservi
 
 ### Installation
 
-When kubernetes cluster is ready, run `sh scripts/install-daytrader.sh`.
+When kubernetes cluster is ready, 
+- Clone the `deploy-daytrader` app in your root node i.e. `node-0`
+- Open terminal in `node-0` and change directory to `deploy-daytrader` app by `cd deploy-daytrader`
+- Check the `.env` file and set 
+    - `APP_VERSION` which represents the **tag** in **docker-hub** for DayTrader microservice images
+    - `REPOSITORY_ROOT` which represents the **repository name** in **docker-hub** for DayTrader microservice images
+- Open the `helm/values.yaml`file
+    - Update the `cluster->dns` property with dns value (not IP address) of the root node `node-0` of your kubernetes cluster. Make sure you typed them in **lower-case**
+    - Update the `image->namespace` with docker-hub repo name (if-required)
+- Now, to install DayTrader microservices run `sh scripts/install-daytrader.sh`.
 
 ### Running
 
