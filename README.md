@@ -37,6 +37,7 @@ To uninstall the application, run `sh scripts/uninstall-daytrader.sh`.
 
 ### Testing
 - While keeping the script `scripts/port-forward.sh` running open the url `https://localhost:5443/` in your browser to browse DayTrader
+- Save test result in a file for example `kubectl logs --follow -l app=daytrader-portfolios>DT-10K-requests-original-iteration-1.txt`
 - Go to `Configuration` tab and follow the configuration steps update upto `(Re)-populate  DayTrader Database` sequantially
 - Open `Blazemeter` Google Chrome extension (assuming you're using Google chrome browser) and ensure that you are Logged in
 - On `Blazemeter` start recording
