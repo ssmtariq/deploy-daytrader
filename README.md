@@ -34,3 +34,15 @@ To update the helm chart or running images, make any changes required to the tem
 ### Uninstalling
 
 To uninstall the application, run `sh scripts/uninstall-daytrader.sh`.
+
+### Testing
+- While keeping the script `scripts/port-forward.sh` running open the url `https://localhost:5443/` in your browser to browse DayTrader
+- Go to `Configuration` tab and follow the configuration steps update upto `(Re)-populate  DayTrader Database` sequantially
+- Open `Blazemeter` Google Chrome extension (assuming you're using Google chrome browser) and ensure that you are Logged in
+- On `Blazemeter` start recording
+- Click the `Test DayTrader Scenario`, then click `Quotes/Trade` and then click the option (button) `buy`
+- Now stop recording in `Blazemeter` and save the test plan as `.jmx` file by clicking `Save as` option
+- Open the `.jmx` file in **Apache JMeter** (currently using version 5.4.3), add 2 listeners `View Results Tree`, `Summary Report` under `Thread Group->Test`
+- Set filename to the above listeners just added
+- Update Thread Group for `Number of Threads`, `Ramp-up period` and `Loop Count` as required. For instance 16, 16, and 625
+- Now start testing and observe result in `View Results Tree`
