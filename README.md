@@ -7,7 +7,7 @@ This repo contains a Helm chart that can be used to deploy [Daytrader Microservi
 ### Installation
 
 When kubernetes cluster is ready, 
-- Clone the `deploy-daytrader` app in your root node i.e. `node-0`
+- Clone the `deploy-daytrader` app in your root node i.e. `node-0`. You can use the command `git clone https://github.com/ssmtariq/deploy-daytrader.git`
 - Open terminal in `node-0` and change directory to `deploy-daytrader` app by `cd deploy-daytrader`
 - [Optional] To change the docker image tag to be deployed
     - Open `helm/Chart.yaml` file and update the field `appVersion`. For instance, default `appVersion: 4.0.18` to `appVersion: optimized`.
